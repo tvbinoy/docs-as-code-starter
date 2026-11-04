@@ -1,31 +1,363 @@
 .hero {
-  padding: 5rem 0;
-  text-align: center;
-  background: linear-gradient(135deg, #2b2060 0%, #4c3a8f 100%);
-  color: #fff;
+  background: #143b31;
+  color: #f8f7ef;
+  padding: 5.25rem 0 4.5rem;
 }
-
-.heroTitle {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.heroSubtitle {
-  font-size: 1.35rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.features {
+.heroGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr 1.05fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+.eyebrow,
+.kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.5rem;
+}
+.eyebrow {
+  color: #d8e7a2;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.eyebrow > span {
+  width: 7px;
+  height: 7px;
+  background: #d8e7a2;
+  border-radius: 50%;
+}
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.9rem, 4.7vw, 4.65rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  margin-bottom: 1.4rem;
+}
+.hero h1 em {
+  color: #d8e7a2;
+  font-weight: 400;
+}
+.lead {
+  color: #d4e1d9;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
-  padding: 3rem 0;
+  color: #173b30;
+  background: #dfecb7;
+  padding: 0.9rem 1.15rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 160ms;
+}
+.primaryButton:hover {
+  background: #f0f5db;
+  color: #173b30;
+  text-decoration: none;
+}
+.secondaryLink {
+  color: #f8f7ef;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.secondaryLink:hover {
+  color: #dfecb7;
+}
+.sampleNote {
+  color: #bdcfc3;
+  font-size: 0.73rem;
+  margin: 1.3rem 0 0;
+}
+.boardFigure {
+  margin: 0;
+  min-width: 0;
+}
+.figureLabel {
+  display: flex;
+  justify-content: space-between;
+  color: #d0dfd5;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.85rem;
+}
+.figureLabel span:last-child {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+.boardFigure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 18px 45px #081e1940;
+}
+.boardFigure figcaption {
+  text-align: right;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #c4d7c9;
+  margin-top: 0.9rem;
+}
+.paths {
+  padding: 4.8rem 0 4rem;
+}
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2.1rem;
+}
+.kicker {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+.sectionHeading h2,
+.rhythmPanel h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+  margin: 0;
+}
+.sectionHeading > p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--daymark-muted);
+  margin-bottom: 0.15rem;
+}
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+.pathCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  border: 1px solid var(--daymark-border);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  transition:
+    border-color 160ms,
+    transform 160ms;
+}
+.pathCard:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-3px);
+}
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2.3rem;
+}
+.cardNumber {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  background: var(--daymark-soft);
+  border-radius: 50%;
+  color: var(--ifm-color-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.cardLabel {
+  font-size: 0.62rem;
+  color: var(--daymark-muted);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.pathCard h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  max-width: 230px;
+  margin-bottom: 0.8rem;
+}
+.pathCard > p {
+  color: var(--daymark-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 1.6rem;
+}
+.cardAction {
+  border-top: 1px solid var(--daymark-border);
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.rhythm {
+  padding: 0 0 4.5rem;
+}
+.rhythmPanel {
+  background: var(--daymark-soft);
+  border-radius: 8px;
+  padding: 2.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 4rem;
+  align-items: center;
+}
+.rhythmPanel h2 {
+  margin-bottom: 1.5rem;
+}
+.rhythmPanel a {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+.steps li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.steps li > span {
+  border: 1px solid var(--daymark-border);
+  border-radius: 50%;
+  flex: 0 0 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+.steps h3 {
+  font-size: 0.98rem;
+  margin: 0.15rem 0 0.25rem;
+}
+.steps p {
+  font-size: 0.87rem;
+  color: var(--daymark-muted);
+  margin: 0;
+  line-height: 1.65;
+}
+.aboutSample {
+  font-size: 0.78rem;
+  color: var(--daymark-muted);
+  padding: 1.3rem 0;
+  border-top: 1px solid var(--daymark-border);
+  line-height: 1.8;
+}
+.aboutSample strong {
+  color: var(--ifm-font-color-base);
+}
+.hero a:focus-visible {
+  outline-color: #dfecb7;
 }
 
-.card {
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  background: var(--ifm-background-surface-color);
+@media (max-width: 996px) {
+  .hero {
+    padding: 3.5rem 0;
+  }
+  .heroGrid {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+  .boardFigure {
+    max-width: 650px;
+    margin-top: 1rem;
+  }
+  .sectionHeading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .pathCard {
+    padding: 1.2rem;
+  }
+  .rhythmPanel {
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.7rem 0 2rem;
+  }
+  .hero h1 {
+    font-size: 2.9rem;
+  }
+  .eyebrow {
+    font-size: 0.63rem;
+  }
+  .lead {
+    font-size: 0.95rem;
+  }
+  .actions {
+    gap: 1.2rem;
+  }
+  .paths {
+    padding: 3rem 0 2.5rem;
+  }
+  .cardGrid,
+  .rhythmPanel {
+    grid-template-columns: 1fr;
+  }
+  .cardTop {
+    margin-bottom: 1.5rem;
+  }
+  .pathCard h3 {
+    max-width: none;
+  }
+  .pathCard {
+    padding: 1.5rem;
+  }
+  .rhythm {
+    padding-bottom: 2.5rem;
+  }
+  .rhythmPanel {
+    padding: 1.5rem;
+  }
+  .figureLabel {
+    font-size: 0.56rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pathCard,
+  .primaryButton {
+    transition: none;
+  }
+  .pathCard:hover {
+    transform: none;
+  }
 }

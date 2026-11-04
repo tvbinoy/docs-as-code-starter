@@ -1,38 +1,179 @@
-/* Brand tokens. Change these first; the whole theme follows. */
+/* Daymark uses system fonts and local assets only. */
 :root {
-  --ifm-color-primary: #4c3a8f;
-  --ifm-color-primary-dark: #443482;
-  --ifm-color-primary-darker: #403179;
-  --ifm-color-primary-darkest: #342861;
-  --ifm-color-primary-light: #54419c;
-  --ifm-color-primary-lighter: #5a46a3;
-  --ifm-color-primary-lightest: #6b58b5;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(76, 58, 143, 0.1);
-  --acme-accent: #f2a93b;
+  --ifm-color-primary: #25634d;
+  --ifm-color-primary-dark: #215945;
+  --ifm-color-primary-darker: #1f5441;
+  --ifm-color-primary-darkest: #1a4536;
+  --ifm-color-primary-light: #296d55;
+  --ifm-color-primary-lighter: #2b7259;
+  --ifm-color-primary-lightest: #308164;
+  --ifm-font-family-base: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --ifm-font-color-base: #253c32;
+  --ifm-background-color: #f9f9f3;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-heading-font-weight: 650;
+  --ifm-line-height-base: 1.75;
+  --ifm-code-font-size: 90%;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-height: 4.25rem;
+  --ifm-footer-background-color: #123329;
+  --ifm-menu-link-padding-vertical: 0.55rem;
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 77, 0.1);
+  --daymark-muted: #5d6d62;
+  --daymark-border: #d9e0d6;
+  --daymark-soft: #eef2e7;
 }
-
-[data-theme='dark'] {
-  --ifm-color-primary: #b5a6f0;
-  --ifm-color-primary-dark: #a08ee9;
-  --ifm-color-primary-darker: #957fe6;
-  --ifm-color-primary-darkest: #7a5fdf;
-  --ifm-color-primary-light: #c8bcf4;
-  --ifm-color-primary-lighter: #d3c9f6;
-  --ifm-color-primary-lightest: #ede9fc;
-  --docusaurus-highlighted-code-line-bg: rgba(181, 166, 240, 0.15);
+[data-theme="dark"] {
+  --ifm-color-primary: #a9d5b2;
+  --ifm-color-primary-dark: #8cc89a;
+  --ifm-color-primary-darker: #7ec18e;
+  --ifm-color-primary-darkest: #53ab68;
+  --ifm-color-primary-light: #c6e2ca;
+  --ifm-color-primary-lighter: #d4e9d6;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-font-color-base: #e0e8df;
+  --ifm-background-color: #17221d;
+  --ifm-background-surface-color: #1e2c25;
+  --ifm-navbar-background-color: #17221d;
+  --daymark-muted: #b0bfb3;
+  --daymark-border: #3d5042;
+  --daymark-soft: #25372b;
+  --docusaurus-highlighted-code-line-bg: rgba(169, 213, 178, 0.1);
 }
-
-/* Example of a custom class used from MDX: <div className="twt-note-box"> */
-.twt-note-box {
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  background: rgba(76, 58, 143, 0.08);
-  border: 1px solid rgba(76, 58, 143, 0.25);
+body {
+  -webkit-font-smoothing: antialiased;
+}
+.navbar {
+  border-bottom: 1px solid var(--daymark-border);
+}
+.navbar__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+.navbar__logo {
+  height: 1.85rem;
+  margin-right: 0.5rem;
+}
+.navbar__link {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.navbar__brand:hover,
+.menu__link:hover,
+.table-of-contents__link:hover {
+  text-decoration: none;
+}
+.menu__link {
+  font-size: 0.9rem;
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--daymark-soft);
+  font-weight: 650;
+}
+.theme-doc-sidebar-container {
+  border-color: var(--daymark-border) !important;
+}
+.theme-doc-breadcrumbs {
+  margin-bottom: 1.7rem;
+}
+.markdown h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+  font-size: clamp(2.2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
 }
-
-[data-theme='dark'] .twt-note-box {
-  background: rgba(181, 166, 240, 0.12);
-  border-color: rgba(181, 166, 240, 0.35);
+.markdown h2 {
+  font-size: 1.45rem;
+  margin-top: 2.4rem;
+  letter-spacing: -0.025em;
+}
+.markdown h3 {
+  font-size: 1.15rem;
+}
+.markdown a {
+  text-decoration: underline;
+}
+.markdown p,
+.markdown li {
+  font-size: 0.98rem;
+}
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+.markdown th {
+  background: var(--daymark-soft);
+}
+.markdown table td,
+.markdown table th {
+  border-color: var(--daymark-border);
+  padding: 0.7rem 0.85rem;
+}
+.markdown img {
+  border: 1px solid var(--daymark-border);
+  border-radius: 8px;
+}
+.markdown blockquote {
+  background: var(--daymark-soft);
+  color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-primary);
+  padding: 1rem 1.2rem;
+  border-radius: 0 6px 6px 0;
+}
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+.table-of-contents {
+  font-size: 0.78rem;
+  border-color: var(--daymark-border);
+}
+.pagination-nav__link {
+  border-color: var(--daymark-border);
+  border-radius: 7px;
+  background: var(--ifm-background-surface-color);
+}
+.pagination-nav__sublabel {
+  font-size: 0.75rem;
+}
+.pagination-nav__label {
+  font-size: 0.9rem;
+}
+.theme-edit-this-page {
+  font-size: 0.8rem;
+}
+.footer {
+  --ifm-footer-background-color: #123329;
+  --ifm-footer-color: #c5d4c8;
+  --ifm-footer-link-color: #d6e3d8;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.footer__title {
+  color: #eef4e8;
+  font-size: 0.85rem;
+}
+.footer__link-item {
+  font-size: 0.82rem;
+}
+.footer__copyright {
+  font-size: 0.73rem;
+  padding-top: 0.75rem;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 4px;
+}
+@media (max-width: 640px) {
+  .markdown h1 {
+    font-size: 2.25rem;
+  }
+  .markdown table th,
+  .markdown table td {
+    min-width: 8.5rem;
+  }
 }
