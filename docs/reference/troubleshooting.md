@@ -28,7 +28,7 @@ Open **Projects**, select the destination, and check the board. Use **Status fil
 
 Open its project or Inbox and set **Status filter** to **All**.
 
-Today and Upcoming always hide Done tasks. To bring one back, open it, change **Status** to **To do**, and select **Save task**.
+Today and Upcoming always hide Done tasks. To bring one back, open it, choose **To do** for **Status**, and select **Save task**.
 
 ## An overdue task is still in Today
 

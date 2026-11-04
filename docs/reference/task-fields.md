@@ -52,7 +52,7 @@ Due dates are calendar dates, with no time of day. Today is based on your device
 
 :::note Date notation
 
-When writing dates in notes or examples, use `YYYY-MM-DD` to avoid ambiguity. For example, `2026-11-06` means 6 November 2026. The date picker may display dates in your device's format.
+When writing dates in notes or examples, use `YYYY-MM-DD` to avoid ambiguity. For example, `2026-11-06` means November 6, 2026. The date picker may display dates in your device's format.
 
 :::
 

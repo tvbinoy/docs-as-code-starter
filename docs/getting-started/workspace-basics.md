@@ -46,7 +46,7 @@ Today and Upcoming always show unfinished work. To reopen a completed task:
 1. Open its project or Inbox.
 2. Set **Status filter** to **All**.
 3. Open the task.
-4. Change **Status** to **To do**.
+4. Choose **To do** for **Status**.
 5. Select **Save task**.
 
 If its date is today or earlier, the reopened task also appears in Today.

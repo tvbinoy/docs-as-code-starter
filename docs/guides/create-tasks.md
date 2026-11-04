@@ -63,6 +63,6 @@ Closing the task editor without selecting **Save task** discards your unsaved ed
 
 To complete a task, change **Status** to **Done** and save. It leaves Today and Upcoming.
 
-To reopen it, find it in its project or Inbox using **Status filter → All**, change **Status** to **To do**, and save.
+To reopen it, find it in its project or Inbox using **Status filter → All**, choose **To do** for **Status**, and save.
 
 For a full list of defaults, see [Task fields](../reference/task-fields.md). If a task disappears from a view, see [Troubleshooting](../reference/troubleshooting.md).
