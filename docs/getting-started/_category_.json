@@ -1,5 +1,8 @@
 {
-  "label": "Getting started",
+  "label": "Start here",
   "position": 2,
-  "link": { "type": "generated-index", "description": "Set up your tools and write your first page." }
+  "link": {
+    "type": "generated-index",
+    "description": "Learn the workspace and take your first task from idea to done."
+  }
 }

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+<title id="title">Daymark project board illustration</title>
+<desc id="desc">Website refresh: Review the homepage heading in To do, Collect feedback on the draft in In progress, and Check the navigation links in Done. An illustration, not an interactive app.</desc>
+<rect width="900" height="640" rx="16" fill="#f7f8f2"/>
+<path d="M16 0h868a16 16 0 0 1 16 16v42H0V16A16 16 0 0 1 16 0" fill="#eef1e8"/>
+<g fill="#b7c4b6"><circle cx="25" cy="29" r="5"/><circle cx="44" cy="29" r="5"/><circle cx="63" cy="29" r="5"/></g>
+<text x="450" y="34" text-anchor="middle" fill="#647461" font-family="Segoe UI,Arial,sans-serif" font-size="13">Daymark · sample workspace</text>
+<path d="M0 58h184v582H16a16 16 0 0 1-16-16z" fill="#e8eee2"/>
+<rect x="22" y="86" width="29" height="29" rx="8" fill="#25634d"/>
+<path d="M29 104a7 7 0 0 1 15 0M28 109h17" fill="none" stroke="#dfecb7" stroke-width="2" stroke-linecap="round"/>
+<text x="60" y="107" fill="#244f3b" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">Daymark</text>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#53684f">
+<text x="25" y="164">Inbox</text><text x="25" y="205">Today</text><text x="25" y="246">Upcoming</text>
+<text x="25" y="308" font-size="10" letter-spacing="1.5" font-weight="700">PROJECTS</text>
+<rect x="13" y="326" width="158" height="39" rx="6" fill="#d6e2cd"/>
+<text x="25" y="351" font-size="13" fill="#244f3b" font-weight="600">Website refresh</text>
+</g>
+<text x="217" y="100" fill="#60745c" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="1.3">YOUR WORK, A LITTLE CLEARER</text>
+<text x="217" y="144" fill="#253c32" font-family="Georgia,serif" font-size="31">Website refresh</text>
+<text x="217" y="173" fill="#60745c" font-family="Segoe UI,Arial,sans-serif" font-size="13">One project. Three small steps forward.</text>
+<rect x="217" y="197" width="152" height="28" rx="14" fill="#e8eee2"/>
+<text x="231" y="215" fill="#46613d" font-family="Segoe UI,Arial,sans-serif" font-size="11">Status filter: All</text>
+<path d="M217 246h649" stroke="#d7dfd0"/>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#354e39">
+<circle cx="225" cy="279" r="4" fill="#8d9b85"/><text x="238" y="284">To do</text>
+<circle cx="448" cy="279" r="4" fill="#b99038"/><text x="461" y="284">In progress</text>
+<circle cx="671" cy="279" r="4" fill="#4c805c"/><text x="684" y="284">Done</text>
+</g>
+<g fill="#fff" stroke="#d8e0d1"><rect x="217" y="302" width="203" height="173" rx="8"/><rect x="440" y="302" width="203" height="173" rx="8"/><rect x="663" y="302" width="203" height="173" rx="8"/></g>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#2d4331">
+<text x="233" y="336">Review the</text><text x="233" y="359">homepage heading</text>
+<text x="456" y="336">Collect feedback</text><text x="456" y="359">on the draft</text>
+<text x="679" y="336">Check the</text><text x="679" y="359">navigation links</text>
+</g>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#61715d">
+<text x="233" y="390">Make the next step clear.</text><text x="456" y="390">Bring another view to it.</text><text x="679" y="390">Ready for the next step.</text>
+</g>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">
+<rect x="233" y="425" width="58" height="23" rx="11" fill="#eef2e7"/><text x="246" y="440" fill="#52684a">Normal</text>
+<rect x="456" y="425" width="45" height="23" rx="11" fill="#f7edce"/><text x="467" y="440" fill="#7e641b">High</text>
+<rect x="679" y="425" width="64" height="23" rx="11" fill="#e4efdf"/><text x="690" y="440" fill="#356341">✓ Done</text>
+</g>
+<path d="M217 563h649" stroke="#d7dfd0"/>
+<text x="217" y="592" fill="#61715d" font-family="Segoe UI,Arial,sans-serif" font-size="12">A little progress counts.</text>
+<text x="866" y="592" text-anchor="end" fill="#61715d" font-family="Segoe UI,Arial,sans-serif" font-size="10">ILLUSTRATION</text>
+</svg>

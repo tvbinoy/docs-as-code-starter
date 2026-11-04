@@ -32,21 +32,10 @@ jobs:
         run: npm run build
         env:
           DOCS_URL: https://tvbinoy.github.io
-          DOCS_BASE_URL: /docs-as-code-training/
+          DOCS_BASE_URL: /docs-as-code-starter/
 
       - name: Check external links
         uses: lycheeverse/lychee-action@v2
         with:
           args: --no-progress --accept 200,206,429 'docs/**/*.md' 'docs/**/*.mdx'
           fail: false # advisory: external sites go down; set true to enforce
-
-  style:
-    name: style (Vale, advisory)
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v4
-      - uses: errata-ai/vale-action@v2
-        with:
-          files: docs
-          fail_on_error: false

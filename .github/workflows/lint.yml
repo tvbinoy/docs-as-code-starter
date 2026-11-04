@@ -1,0 +1,20 @@
+name: Editorial checks
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  style:
+    name: style (Vale, advisory)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: errata-ai/vale-action@v2
+        with:
+          files: docs
+          fail_on_error: false
